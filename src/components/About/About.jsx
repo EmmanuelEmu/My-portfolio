@@ -4,6 +4,10 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
+import ProgressBar from 'react-animated-progress-bar';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faReact ,faCheckSquare} from '@fortawesome/free-solid-svg-icons'
+import Font from './Fonts/Font';
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
@@ -41,13 +45,17 @@ const About = () => {
                   {paragraphOne ||
                     'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
                 </p>
-                <p className="about-wrapper__info-text">
+                {/* <p className="about-wrapper__info-text">
                   {paragraphTwo ||
                     'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
                 </p>
                 <p className="about-wrapper__info-text">
                   {paragraphThree || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
-                </p>
+                </p> */}<br/><br/>
+
+                {/* Progress bar */}
+                <h3><strong>Skills</strong></h3>
+                <Font></Font>
                 {resume && (
                   <span className="d-flex mt-3">
                     <a
